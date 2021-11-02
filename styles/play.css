@@ -1,0 +1,84 @@
+.drums {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+}
+
+.drum {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.drum.playing,.drum:active{
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+/* History */
+
+
+.history {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  max-width: 80%;
+  min-height: 2.5rem;
+  background-color: rgba(255,255,255, .5);
+  border-radius:.5rem;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.history li {
+  margin: 0 .5rem;
+}
+
+.history li:last-child {
+  color: gold;
+  text-shadow: 0 0 .5rem black;
+}
+
+.history li:hover {
+  transform: scale(1.2);
+}
+
+.history li:active {
+  font-weight: bold;
+  color: red;
+}
+
+.history li.playback{
+  color:rgba(0,0,0, .2);
+  text-shadow: none;
+
+}

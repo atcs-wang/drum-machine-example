@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/play.css">
+</head>
+<body>
+
+
+  <div class="drums">
+    <div data-key="a" class="drum">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="s" class="drum">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="d" class="drum">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="f" class="drum">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="g" class="drum">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="h" class="drum">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="j" class="drum">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="k" class="drum">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="l" class="drum">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="a" src="sounds/clap.wav"  preload=auto></audio>
+  <audio data-key="s" src="sounds/hihat.wav" preload=auto></audio>
+  <audio data-key="d" src="sounds/kick.wav" preload=auto></audio>
+  <audio data-key="f" src="sounds/openhat.wav" preload=auto></audio>
+  <audio data-key="g" src="sounds/boom.wav" preload=auto></audio>
+  <audio data-key="h" src="sounds/ride.wav" preload=auto></audio>
+  <audio data-key="j" src="sounds/snare.wav" preload=auto></audio>
+  <audio data-key="k" src="sounds/tom.wav" preload=auto></audio>
+  <audio data-key="l" src="sounds/tink.wav" preload=auto></audio>
+
+  <ul class="history" title="Press 1 to replay; 2 to stop; 3 to clear history; click to remove sound record"></ul>
+
+  <script src="play.js"></script>
+
+</body>
+</html>
